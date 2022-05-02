@@ -1,0 +1,1280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Componentes Bootstrap - Forms</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/docs.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+  </head>
+  <body class="accordion">
+    
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 py-4">
+          <h4 class="text-white">Acerca de:</h4>
+          <p class="text-white">Módulo: Diseño de páginas web con Bootstrap.</p>
+          <p class="text-white">PROYECTO FINAL</p>
+          <p class="text-white">Mauricio Hidalgo Ríos</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <img src="assets/bootstrap_logo.png" alt="Bootstrap" width="30">
+        <strong class="ms-2">Back to Components List</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="py-1 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light"><strong>Forms</strong></h1>
+        <p class="bd-lead">Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                
+                <section id="forms-overview" class="mb-5">
+                    <h1>Forms</h1>
+                    <p class="bd-lead">Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.</p>
+                
+                    <h2>Overview</h2>    
+                
+                    <p>Here’s a quick example to demonstrate Bootstrap’s form styles. Keep reading for documentation on required classes, form layout, and more.</p>
+                
+                    <div class="bd-example mb-5">
+                        <form data-dashlane-rid="9780f85b4e62a446" data-form-type="other">
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" data-dashlane-rid="78ead2742429c433" data-kwimpalastatus="alive" data-kwimpalaid="1651360087768-3" data-form-type="email">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" data-dashlane-rid="cb1e499801a3f5f0" data-kwimpalastatus="alive" data-kwimpalaid="1651360087768-0" data-form-type="password">
+                          </div>
+                          <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" data-dashlane-rid="4e98e65d1fee16ed" data-form-type="other">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                          </div>
+                          <button type="submit" class="btn btn-primary" data-dashlane-rid="4f6fa39097dea354" data-dashlane-label="true" data-form-type="action">Submit</button>
+                        </form>
+                    </div>
+                
+                    <h3>Form text</h3>
+                
+                    <p>Block-level or inline-level form text can be created using <code>.form-text</code>.</p>
+                
+                    <p>Form text below inputs can be styled with <code>.form-text</code>. If a block-level element will be used, a top margin is added for easy spacing from the inputs above.</p>
+                
+                    <div class="bd-example mb-5">
+                        <label for="inputPassword5" class="form-label">Password</label>
+                        <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" data-dashlane-rid="6e01af43d77e53b5" data-kwimpalastatus="alive" data-kwimpalaid="1651360087768-1" data-form-type="password">
+                        <div id="passwordHelpBlock" class="form-text">
+                          Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                        </div>
+                    </div>
+                
+                    <p>Inline text can use any typical inline HTML element (be it a <code>&lt;span&gt;</code>, <code>&lt;small&gt;</code>, or something else) with nothing more than the <code>.form-text</code> class.</p>
+                
+                    <div class="bd-example mb-5">
+                        <div class="row g-3 align-items-center">
+                          <div class="col-auto">
+                            <label for="inputPassword6" class="col-form-label">Password</label>
+                          </div>
+                          <div class="col-auto">
+                            <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" data-dashlane-rid="d459f4327f2fa86f" data-kwimpalastatus="alive" data-kwimpalaid="1651360087768-2" data-form-type="password">
+                          </div>
+                          <div class="col-auto">
+                            <span id="passwordHelpInline" class="form-text">
+                              Must be 8-20 characters long.
+                            </span>
+                          </div>
+                        </div>
+                    </div>
+                
+                    <h3>Disabled forms</h3>
+                
+                    <p>Add the <code>disabled</code> boolean attribute on an input to prevent user interactions and make it appear lighter.</p>
+                
+                    <div class="bd-example mb-5">
+                        <form data-dashlane-rid="2bbc99c4acc747a0" data-form-type="other">
+                          <fieldset disabled="">
+                            <legend>Disabled fieldset example</legend>
+                            <div class="mb-3">
+                              <label for="disabledTextInput" class="form-label">Disabled input</label>
+                              <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input" data-dashlane-rid="eb006e908980d9a9" data-form-type="other">
+                            </div>
+                            <div class="mb-3">
+                              <label for="disabledSelect" class="form-label">Disabled select menu</label>
+                              <select id="disabledSelect" class="form-select" data-dashlane-rid="736a3175e84e6abe" data-form-type="other">
+                                <option>Disabled select</option>
+                              </select>
+                            </div>
+                            <div class="mb-3">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled="" data-dashlane-rid="cd9bc99da212e261" data-form-type="other">
+                                <label class="form-check-label" for="disabledFieldsetCheck">
+                                  Can't check this
+                                </label>
+                              </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary" data-dashlane-rid="58c4530266da8ae5" data-dashlane-label="true" data-form-type="action">Submit</button>
+                          </fieldset>
+                        </form>
+                    </div>
+                
+                </section>
+                
+                <section id="forms-form-control" class="mb-5">
+                    <h2>Form controls</h2>
+                
+                    <p class="bd-lead">Give textual form controls like <code>&lt;input&gt;</code>s and <code>&lt;textarea&gt;</code>s an upgrade with custom styles, sizing, focus states, and more.</p>
+                
+                    <h3>Example</h3>
+                
+                    <div class="bd-example mb-5">
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" data-dashlane-rid="4e4e1a31795213b6" data-kwimpalastatus="alive" data-kwimpalaid="1651360761699-3" data-form-type="email">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" data-dashlane-rid="ee87f1024d1977f4" data-form-type="other"></textarea>
+                        </div>
+                    </div>
+                
+                    <h3>Sizing</h3>
+                
+                    <p>Set heights using classes like <code>.form-control-lg</code> and <code>.form-control-sm</code>.</p>
+                
+                    <div class="bd-example mb-4">
+                        <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example" data-dashlane-rid="a46f74cb776affb1" data-form-type="other">
+                        <input class="form-control" type="text" placeholder="Default input" aria-label="default input example" data-dashlane-rid="24a02d1470f9a4e9" data-form-type="other">
+                        <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example" data-dashlane-rid="61334ebf125eb3ab" data-form-type="other">
+                    </div>
+                
+                    <h3>Disabled</h3>
+                
+                    <p>Add the <code>disabled</code> boolean attribute on an input to give it a grayed out appearance and remove pointer events.</p>
+                
+                    <div class="bd-example mb-4">
+                        <input class="form-control" type="text" placeholder="Disabled input" aria-label="Disabled input example" disabled="" data-dashlane-rid="ca759dd23b395f11" data-form-type="other">
+                        <input class="form-control" type="text" value="Disabled readonly input" aria-label="Disabled input example" disabled="" readonly="" data-dashlane-rid="e0c437b85263981a" data-form-type="other">
+                    </div>
+                
+                    <h3>Readonly</h3>
+                
+                    <p>Add the <code>readonly</code> boolean attribute on an input to prevent modification of the input’s value.</p>
+                
+                    <div class="bd-example mb-4">
+                        <input class="form-control" type="text" value="Readonly input here..." aria-label="readonly input example" readonly="" data-dashlane-rid="499c4fc1778a3f82" data-form-type="other">
+                    </div>
+                
+                    <h3>Readonly plain text</h3>
+                
+                    <p>If you want to have <code>&lt;input readonly&gt;</code> elements in your form styled as plain text, use the <code>.form-control-plaintext</code> class to remove the default form field styling and preserve the correct margin and padding.</p>
+                
+                    <div class="bd-example mb-5">
+                        <div class="mb-3 row">
+                          <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                          <div class="col-sm-10">
+                            <input type="text" readonly="" class="form-control-plaintext" id="staticEmail" value="email@example.com" data-dashlane-rid="ef2fd0acd9ebd473" data-form-type="email">
+                          </div>
+                        </div>
+                        <div class="mb-3 row">
+                          <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                          <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword" data-dashlane-rid="01c81d85f13a2395" data-kwimpalastatus="alive" data-kwimpalaid="1651360761699-1" data-form-type="password,new">
+                          </div>
+                        </div>
+                    </div>
+                
+                    <div class="bd-example mb-5">
+                        <form class="row g-3" data-dashlane-rid="52a5a2335cd743a1" data-form-type="login">
+                          <div class="col-auto">
+                            <label for="staticEmail2" class="visually-hidden">Email</label>
+                            <input type="text" readonly="" class="form-control-plaintext" id="staticEmail2" value="email@example.com" data-dashlane-rid="9e5f4e4c129a3193" data-form-type="email">
+                          </div>
+                          <div class="col-auto">
+                            <label for="inputPassword2" class="visually-hidden">Password</label>
+                            <input type="password" class="form-control" id="inputPassword2" placeholder="Password" data-dashlane-rid="f6cae905a2f3f450" data-kwimpalastatus="alive" data-kwimpalaid="1651360761699-0" data-form-type="password,new">
+                          </div>
+                          <div class="col-auto">
+                            <button type="submit" class="btn btn-primary mb-3" data-dashlane-rid="09f582d8ef9c4374" data-dashlane-label="true" data-form-type="action,register">Confirm identity</button>
+                          </div>
+                        </form>
+                    </div>
+                
+                    <h3>File input</h3>
+                
+                    <div class="bd-example mb-5">
+                        <div class="mb-3">
+                          <label for="formFile" class="form-label">Default file input example</label>
+                          <input class="form-control" type="file" id="formFile" data-dashlane-rid="edc192797e217d55" data-form-type="other">
+                        </div>
+                        <div class="mb-3">
+                          <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+                          <input class="form-control" type="file" id="formFileMultiple" multiple="" data-dashlane-rid="5213ef225d0fa568" data-form-type="other">
+                        </div>
+                        <div class="mb-3">
+                          <label for="formFileDisabled" class="form-label">Disabled file input example</label>
+                          <input class="form-control" type="file" id="formFileDisabled" disabled="" data-dashlane-rid="cfcfad7ff3089f5d" data-form-type="other">
+                        </div>
+                        <div class="mb-3">
+                          <label for="formFileSm" class="form-label">Small file input example</label>
+                          <input class="form-control form-control-sm" id="formFileSm" type="file" data-dashlane-rid="152926f386cd001d" data-form-type="other">
+                        </div>
+                        <div>
+                          <label for="formFileLg" class="form-label">Large file input example</label>
+                          <input class="form-control form-control-lg" id="formFileLg" type="file" data-dashlane-rid="3c8d6c9fc883644a" data-form-type="other">
+                        </div>
+                    </div>
+                
+                    <h3>Color</h3>
+                
+                    <div class="bd-example mb-4">
+                        <label for="exampleColorInput" class="form-label">Color picker</label>
+                        <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color" data-dashlane-rid="e178d92bce8864aa" data-form-type="other">
+                    </div>
+                
+                    <h3>Datalists</h3>
+                
+                    <p>Datalists allow you to create a group of <code>&lt;option&gt;</code>s that can be accessed (and autocompleted) from within an <code>&lt;input&gt;</code>. These are similar to <code>&lt;select&gt;</code> elements, but come with more menu styling limitations and differences. While most browsers and operating systems include some support for <code>&lt;datalist&gt;</code> elements, their styling is inconsistent at best.</p>
+                
+                    <div class="bd-example mb-4">
+                        <label for="exampleDataList" class="form-label">Datalist example</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search..." data-dashlane-rid="f902ed7910cdccfa" data-form-type="other">
+                        <datalist id="datalistOptions">
+                          <option value="San Francisco">
+                          </option><option value="New York">
+                          </option><option value="Seattle">
+                          </option><option value="Los Angeles">
+                          </option><option value="Chicago">
+                        </option></datalist>
+                    </div>
+                
+                </section>
+                
+                <section id="forms-select" class="mb-5">
+                    <h2>Select</h2>
+                
+                    <p class="bd-lead">Customize the native <code>&lt;select&gt;</code>s with custom CSS that changes the element’s initial appearance.</p>
+                
+                    <h3>Default</h3>
+                
+                    <p>Custom <code>&lt;select&gt;</code> menus need only a custom class, <code>.form-select</code> to trigger the custom styles. Custom styles are limited to the <code>&lt;select&gt;</code>’s initial appearance and cannot modify the <code>&lt;option&gt;</code>s due to browser limitations.</p>
+                
+                    <div class="bd-example mb-4">
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected="">Open this select menu</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                    </div>
+                
+                    <h3>Sizing</h3>
+                
+                    <p>You may also choose from small and large custom selects to match our similarly sized text inputs.</p>
+                
+                    <div class="bd-example mb-4">
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                          <option selected="">Open this select menu</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                        
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                          <option selected="">Open this select menu</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                    </div>
+                
+                    <p>The <code>multiple</code> attribute is also supported:</p>
+                
+                    <div class="bd-example mb-4">
+                        <select class="form-select" multiple="" aria-label="multiple select example">
+                          <option selected="">Open this select menu</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                    </div>
+                
+                    <p>As is the <code>size</code> attribute:</p>
+                
+                    <div class="bd-example mb-4">
+                        <select class="form-select" size="3" aria-label="size 3 select example">
+                          <option selected="">Open this select menu</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                    </div>
+                
+                    <h3>Disabled</h3>
+                
+                    <p>Add the <code>disabled</code> boolean attribute on a select to give it a grayed out appearance and remove pointer events.</p>
+                
+                    <div class="bd-example mb-4">
+                        <select class="form-select" aria-label="Disabled select example" disabled="">
+                          <option selected="">Open this select menu</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                    </div>
+                
+                </section>
+                
+                <section id="forms-checks-radios" class="mb-5">
+                
+                    <h2>Checks and radios</h2>
+                
+                    <p class="bd-lead">Create consistent cross-browser and cross-device checkboxes and radios with our completely rewritten checks component.</p>
+                
+                    <h3>Checks</h3>
+                
+                    <div class="bd-example mb-4">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Default checkbox
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="">
+                          <label class="form-check-label" for="flexCheckChecked">
+                            Checked checkbox
+                          </label>
+                        </div>
+                    </div>
+                
+                    <h4>Indeterminate</h4>
+                
+                    <p>Checkboxes can utilize the <code>:indeterminate</code> pseudo class when manually set via JavaScript (there is no available HTML attribute for specifying it).</p>
+                
+                    <div class="bd-example bd-example-indeterminate mb-4">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                          <label class="form-check-label" for="flexCheckIndeterminate">
+                            Indeterminate checkbox
+                          </label>
+                        </div>
+                    </div>
+                
+                    <h4>Disabled</h4>
+                
+                    <p>Add the <code>disabled</code> attribute and the associated <code>&lt;label&gt;</code>s are automatically styled to match with a lighter color to help indicate the input’s state.</p>
+                
+                    <div class="bd-example mb-4">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" disabled="">
+                          <label class="form-check-label" for="flexCheckDisabled">
+                            Disabled checkbox
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked="" disabled="">
+                          <label class="form-check-label" for="flexCheckCheckedDisabled">
+                            Disabled checked checkbox
+                          </label>
+                        </div>
+                    </div>
+                
+                    <h3>Radios</h3>
+                
+                    <div class="bd-example mb-4">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Default radio
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked="">
+                          <label class="form-check-label" for="flexRadioDefault2">
+                            Default checked radio
+                          </label>
+                        </div>
+                    </div>
+                
+                    <h4>Disabled</h4>
+                
+                    <p>Add the <code>disabled</code> attribute and the associated <code>&lt;label&gt;</code>s are automatically styled to match with a lighter color to help indicate the input’s state.</p>
+                
+                    <div class="bd-example mb-4">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled="">
+                          <label class="form-check-label" for="flexRadioDisabled">
+                            Disabled radio
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioCheckedDisabled" checked="" disabled="">
+                          <label class="form-check-label" for="flexRadioCheckedDisabled">
+                            Disabled checked radio
+                          </label>
+                        </div>
+                    </div>
+                
+                    <h3>Switches</h3>
+                
+                    <p>A switch has the markup of a custom checkbox but uses the <code>.form-switch</code> class to render a toggle switch. Switches also support the <code>disabled</code> attribute.</p>
+                
+                    <div class="bd-example mb-5">
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                          <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                        </div>
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked="">
+                          <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+                        </div>
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled="">
+                          <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+                        </div>
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked="" disabled="">
+                          <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+                        </div>
+                    </div>
+                
+                </section>     
+                
+                <section id="forms-range" class="mb-5">
+                
+                    <h2>Range</h2>
+                
+                    <p class="bd-lead">Use our custom range inputs for consistent cross-browser styling and built-in customization.</p>
+                
+                    <div class="bd-example mb-5">
+                        <label for="customRange1" class="form-label">Example range</label>
+                        <input type="range" class="form-range" id="customRange1">
+                    </div>
+                
+                    <h3>Disabled</h3>
+                
+                    <p>Add the <code>disabled</code> boolean attribute on an input to give it a grayed out appearance and remove pointer events.</p>
+                
+                    <div class="bd-example mb-5">
+                        <label for="disabledRange" class="form-label">Disabled range</label>
+                        <input type="range" class="form-range" id="disabledRange" disabled="">
+                    </div>
+                
+                    <h3>Min and max</h3>
+                
+                    <p>Range inputs have implicit values for <code>min</code> and <code>max</code>—<code>0</code> and <code>100</code>, respectively. You may specify new values for those using the <code>min</code> and <code>max</code> attributes.</p>
+                
+                    <div class="bd-example mb-4">
+                        <label for="customRange2" class="form-label">Example range</label>
+                        <input type="range" class="form-range" min="0" max="5" id="customRange2">
+                    </div>
+                
+                    <h3>Steps</h3>
+                
+                    <p>By default, range inputs “snap” to integer values. To change this, you can specify a <code>step</code> value. In the example below, we double the number of steps by using <code>step="0.5"</code>.</p>
+                
+                </section>
+                
+                <section id="forms-input-group" class="mb-5">
+                
+                    <h2>Input group</h2>
+                
+                    <p class="bd-lead">Easily extend form controls by adding text, buttons, or button groups on either side of textual inputs, custom selects, and custom file inputs.</p>
+                
+                    <h3>Basic example</h3>
+                
+                    <p>Place one add-on or button on either side of an input. You may also place one on both sides of an input. Remember to place <code>&lt;label&gt;</code>s outside the input group.</p>
+                
+                    <div class="bd-example mb-5">
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon1">@</span>
+                          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" data-dashlane-rid="4045dc9340379b1d" data-form-type="username" data-kwimpalastatus="alive" data-kwimpalaid="1651364909993-0">
+                        </div>
+                        
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" data-dashlane-rid="519288e658fe455e" data-form-type="username" data-kwimpalastatus="alive" data-kwimpalaid="1651364909993-1">
+                          <span class="input-group-text" id="basic-addon2">@example.com</span>
+                        </div>
+                        
+                        <label for="basic-url" class="form-label">Your vanity URL</label>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                          <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" data-dashlane-rid="697ab16a4a683786" data-form-type="website" data-kwimpalastatus="alive" data-kwimpalaid="1651364909993-2">
+                        </div>
+                        
+                        <div class="input-group mb-3">
+                          <span class="input-group-text">$</span>
+                          <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" data-dashlane-rid="b4a7cace6d3c2a99" data-form-type="other">
+                          <span class="input-group-text">.00</span>
+                        </div>
+                        
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control" placeholder="Username" aria-label="Username" data-dashlane-rid="c086b42bdee52dc9" data-form-type="username" data-kwimpalastatus="alive" data-kwimpalaid="1651364909993-3">
+                          <span class="input-group-text">@</span>
+                          <input type="text" class="form-control" placeholder="Server" aria-label="Server" data-dashlane-rid="a4e7fe8f87a1a673" data-form-type="other">
+                        </div>
+                        
+                        <div class="input-group">
+                          <span class="input-group-text">With textarea</span>
+                          <textarea class="form-control" aria-label="With textarea" data-dashlane-rid="97b09525309c83b3" data-form-type="other"></textarea>
+                        </div>
+                    </div>
+                
+                    <h3>Wrapping</h3>
+                
+                    <p>Input groups wrap by default via <code>flex-wrap: wrap</code> in order to accommodate custom form field validation within an input group. You may disable this with <code>.flex-nowrap</code>.</p>
+                
+                    <div class="bd-example mb-4">
+                        <div class="input-group flex-nowrap">
+                          <span class="input-group-text" id="addon-wrapping">@</span>
+                          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" data-dashlane-rid="56c5057db3581779" data-form-type="other">
+                        </div>
+                    </div>
+                
+                    <h3>Sizing</h3>
+                
+                    <div class="bd-example mb-4">
+                        <div class="input-group input-group-sm mb-3">
+                          <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+                          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" data-dashlane-rid="6886e1f456fa39f6" data-form-type="other">
+                        </div>
+                        
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
+                          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" data-dashlane-rid="2b33bd3b0d72a92c" data-form-type="other">
+                        </div>
+                        
+                        <div class="input-group input-group-lg">
+                          <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+                          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" data-dashlane-rid="96cc8c3bfd54e027" data-form-type="other">
+                        </div>
+                    </div>
+                
+                    <h3>Checkboxes and radios</h3>
+                
+                    <p>Place any checkbox or radio option within an input group’s addon instead of text. We recommend adding <code>.mt-0</code> to the <code>.form-check-input</code> when there’s no visible text next to the input.</p>
+                
+                    <div class="bd-example mb-4">
+                        <div class="input-group mb-3">
+                          <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input" data-dashlane-rid="11665d8bb395ade5" data-form-type="other">
+                          </div>
+                          <input type="text" class="form-control" aria-label="Text input with checkbox" data-dashlane-rid="408a941d6c98b4bc" data-form-type="other">
+                        </div>
+                        
+                        <div class="input-group">
+                          <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input" data-dashlane-rid="a43a3a8c1aabe9fe" data-form-type="other">
+                          </div>
+                          <input type="text" class="form-control" aria-label="Text input with radio button" data-dashlane-rid="86d8e9ac541ce46a" data-form-type="other">
+                        </div>
+                    </div>
+                
+                    <h3>Multiple inputs</h3>
+                
+                    <p>While multiple <code>&lt;input&gt;</code>s are supported visually, validation styles are only available for input groups with a single <code>&lt;input&gt;</code>.</p>
+                
+                    <div class="bd-example mb-4">
+                        <div class="input-group">
+                          <span class="input-group-text">First and last name</span>
+                          <input type="text" aria-label="First name" class="form-control" data-dashlane-rid="8158f9d40f12d6d3" data-form-type="name" data-kwimpalastatus="alive" data-kwimpalaid="1651364909993-4">
+                          <input type="text" aria-label="Last name" class="form-control" data-dashlane-rid="c379a825cb8589fd" data-form-type="name" data-kwimpalastatus="alive" data-kwimpalaid="1651364909993-5">
+                        </div>
+                    </div>
+                
+                    <h3>Multiple addons</h3>
+                
+                    <p>Multiple add-ons are supported and can be mixed with checkbox and radio input versions.</p>
+                
+                    <div class="bd-example mb-4">
+                        <div class="input-group mb-3">
+                          <span class="input-group-text">$</span>
+                          <span class="input-group-text">0.00</span>
+                          <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" data-dashlane-rid="f2f2b9c22798c4cd" data-form-type="other">
+                        </div>
+                        
+                        <div class="input-group">
+                          <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" data-dashlane-rid="0004d3de603286f9" data-form-type="other">
+                          <span class="input-group-text">$</span>
+                          <span class="input-group-text">0.00</span>
+                        </div>
+                    </div>
+                
+                    <h3>Button addons</h3>
+                
+                    <div class="bd-example mb-4">
+                        <div class="input-group mb-3">
+                          <button class="btn btn-outline-secondary" type="button" id="button-addon1" data-dashlane-rid="dcde62ffa686e4f4" data-dashlane-label="true" data-form-type="other">Button</button>
+                          <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" data-dashlane-rid="49e58ac16637198e" data-form-type="other">
+                        </div>
+                        
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2" data-dashlane-rid="71664fefd2bf167b" data-form-type="username" data-kwimpalastatus="alive" data-kwimpalaid="1651364909993-6">
+                          <button class="btn btn-outline-secondary" type="button" id="button-addon2" data-dashlane-rid="f6b762ea6c620c3c" data-dashlane-label="true" data-form-type="other">Button</button>
+                        </div>
+                        
+                        <div class="input-group mb-3">
+                          <button class="btn btn-outline-secondary" type="button" data-dashlane-rid="b291a3e4ca415d02" data-dashlane-label="true" data-form-type="other">Button</button>
+                          <button class="btn btn-outline-secondary" type="button" data-dashlane-rid="4be597cf6fe297e3" data-dashlane-label="true" data-form-type="other">Button</button>
+                          <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons" data-dashlane-rid="a7da5f2b0514463b" data-form-type="other">
+                        </div>
+                        
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username with two button addons" data-dashlane-rid="37dd4b795f19139c" data-form-type="username" data-kwimpalastatus="alive" data-kwimpalaid="1651364909993-7">
+                          <button class="btn btn-outline-secondary" type="button" data-dashlane-rid="1e5e6ab6bf384f05" data-dashlane-label="true" data-form-type="other">Button</button>
+                          <button class="btn btn-outline-secondary" type="button" data-dashlane-rid="02920404d776e415" data-dashlane-label="true" data-form-type="other">Button</button>
+                        </div>
+                    </div>
+                
+                    <h3>Buttons with dropdowns</h3>
+                
+                    <div class="bd-example mb-4">
+                        <div class="input-group mb-3">
+                          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-dashlane-rid="b264303dbd82ee6c" data-dashlane-label="true" data-form-type="other">Dropdown</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                          <input type="text" class="form-control" aria-label="Text input with dropdown button" data-dashlane-rid="98f71d6189508939" data-form-type="other">
+                        </div>
+                        
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control" aria-label="Text input with dropdown button" data-dashlane-rid="f0e52fdd2413c4a9" data-form-type="other">
+                          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-dashlane-rid="c3aaa475a8b18ff0" data-dashlane-label="true" data-form-type="other">Dropdown</button>
+                          <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        
+                        <div class="input-group">
+                          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-dashlane-rid="e9c33a66e82a1a62" data-dashlane-label="true" data-form-type="other">Dropdown</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action before</a></li>
+                            <li><a class="dropdown-item" href="#">Another action before</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                          <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons" data-dashlane-rid="8023fd17d091f22c" data-form-type="other">
+                          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-dashlane-rid="284905dea264ba92" data-dashlane-label="true" data-form-type="other">Dropdown</button>
+                          <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                
+                    <h3>Segmented buttons</h3>
+                
+                    <div class="bd-example mb-4">
+                        <div class="input-group mb-3">
+                          <button type="button" class="btn btn-outline-secondary" data-dashlane-rid="5140709586ea35e3" data-dashlane-label="true" data-form-type="other">Action</button>
+                          <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" data-dashlane-rid="2ad6fc85e93dc9e7" data-dashlane-label="true" data-form-type="other">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                          <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" data-dashlane-rid="cde7fd961a5db28a" data-form-type="other">
+                        </div>
+                        
+                        <div class="input-group">
+                          <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" data-dashlane-rid="5635ac8d1214c359" data-form-type="other">
+                          <button type="button" class="btn btn-outline-secondary" data-dashlane-rid="3acf14d7c2cfd9e4" data-dashlane-label="true" data-form-type="other">Action</button>
+                          <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" data-dashlane-rid="ea313b15dc0c014e" data-dashlane-label="true" data-form-type="other">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                
+                </section>
+                
+                <section id="forms-floating-labels" class="mb-5">
+                    
+                    <h2>Floating labels</h2>
+                
+                    <p class="bd-lead">Create beautifully simple form labels that float over your input fields.</p>
+                
+                    <h3>Example</h3>
+                
+                    <p>Wrap a pair of <code>&lt;input class="form-control"&gt;</code> and <code>&lt;label&gt;</code> elements in <code>.form-floating</code> to enable floating labels with Bootstrap’s textual form fields. A <code>placeholder</code> is required on each <code>&lt;input&gt;</code> as our method of CSS-only floating labels uses the <code>:placeholder-shown</code> pseudo-element. Also note that the <code>&lt;input&gt;</code> must come first so we can utilize a sibling selector (e.g., <code>~</code>).</p>
+                
+                    <div class="bd-example mb-4">
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" data-dashlane-rid="b382e7bcb6b5da9e" data-kwimpalastatus="alive" data-kwimpalaid="1651366092714-3" data-form-type="email">
+                          <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating">
+                          <input type="password" class="form-control" id="floatingPassword" placeholder="Password" data-dashlane-rid="7d370f61ee7e6a5b" data-kwimpalastatus="alive" data-kwimpalaid="1651366092714-0" data-form-type="password">
+                          <label for="floatingPassword">Password</label>
+                        </div>
+                    </div>
+                
+                    <p>Form validation styles also work as expected.</p>
+                
+                    <div class="bd-example mb-4">
+                        <form class="form-floating" data-dashlane-rid="51032351afc7fe86" data-form-type="other">
+                          <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="test@example.com" data-dashlane-rid="823e8fa23120f961" data-kwimpalastatus="alive" data-kwimpalaid="1651366092714-2" data-form-type="email">
+                          <label for="floatingInputInvalid">Invalid input</label>
+                        </form>
+                    </div>
+                
+                    <h3>Textareas</h3>
+                
+                    <p>By default, <code>&lt;textarea&gt;</code>s with <code>.form-control</code> will be the same height as <code>&lt;input&gt;</code>s.</p>
+                
+                    <div class="bd-example mb-4">
+                        <div class="form-floating">
+                          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" data-dashlane-rid="eeac1aad60a1ee7d" data-form-type="other"></textarea>
+                          <label for="floatingTextarea">Comments</label>
+                        </div>
+                    </div>
+                
+                    <h3>Selects</h3>
+                
+                    <p>Other than <code>.form-control</code>, floating labels are only available on <code>.form-select</code>s. They work in the same way, but unlike <code>&lt;input&gt;</code>s, they’ll always show the <code>&lt;label&gt;</code> in its floated state. <strong>Selects with <code>size</code> and <code>multiple</code> are not supported.</strong></p>
+                
+                    <div class="bd-example mb-5">
+                        <div class="form-floating">
+                          <select class="form-select" id="floatingSelect" aria-label="Floating label select example" data-dashlane-rid="f9016da28f3b6634" data-form-type="other">
+                            <option selected="">Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                          <label for="floatingSelect">Works with selects</label>
+                        </div>
+                    </div>
+                
+                    <h3>Layout</h3>
+                
+                    <p>When working with the Bootstrap grid system, be sure to place form elements within column classes.</p>
+                
+                    <div class="bd-example mb-5">
+                        <div class="row g-2">
+                          <div class="col-md">
+                            <div class="form-floating">
+                              <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com" data-dashlane-rid="b4390e0ab78530f4" data-kwimpalastatus="alive" data-kwimpalaid="1651366092714-4" data-form-type="email">
+                              <label for="floatingInputGrid">Email address</label>
+                            </div>
+                          </div>
+                          <div class="col-md">
+                            <div class="form-floating">
+                              <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example" data-dashlane-rid="65fbb591c6768383" data-form-type="other">
+                                <option selected="">Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                              <label for="floatingSelectGrid">Works with selects</label>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                
+                </section>
+                
+                <section id="forms-layout" class="mb-5">
+                
+                    <h2>Layout</h2>
+                
+                    <p class="bd-lead">Give your forms some structure—from inline to horizontal to custom grid implementations—with our form layout options.</p>
+                
+                    <h3>Form grid</h3>
+                
+                    <p>More complex forms can be built using our grid classes. Use these for form layouts that require multiple columns, varied widths, and additional alignment options. <strong>Requires the <code>$enable-grid-classes</code> Sass variable to be enabled</strong> (on by default).</p>
+                
+                    <div class="bd-example mb-4">
+                        <div class="row">
+                          <div class="col">
+                            <input type="text" class="form-control" placeholder="First name" aria-label="First name" data-dashlane-rid="6ca1a4055bcee223" data-kwimpalastatus="alive" data-kwimpalaid="1651372538092-15" data-form-type="name,first">
+                          </div>
+                          <div class="col">
+                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" data-dashlane-rid="d5780ec15b9e8386" data-kwimpalastatus="alive" data-kwimpalaid="1651372538092-16" data-form-type="name,last">
+                          </div>
+                        </div>
+                    </div>
+                
+                    <h3>Gutters</h3>
+                
+                    <p>By adding <a href="/docs/5.0/layout/gutters/">gutter modifier classes</a>, you can have control over the gutter width in as well the inline as block direction. <strong>Also requires the <code>$enable-grid-classes</code> Sass variable to be enabled</strong> (on by default).</p>
+                
+                    <div class="bd-example mb-4">
+                        <div class="row g-3">
+                          <div class="col">
+                            <input type="text" class="form-control" placeholder="First name" aria-label="First name" data-dashlane-rid="8e971bdda1c89355" data-kwimpalastatus="alive" data-kwimpalaid="1651372538092-17" data-form-type="name,first">
+                          </div>
+                          <div class="col">
+                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" data-dashlane-rid="7988c49780ddc0e3" data-kwimpalastatus="alive" data-kwimpalaid="1651372538092-18" data-form-type="name,last">
+                          </div>
+                        </div>
+                    </div>
+                
+                    <p>More complex layouts can also be created with the grid system.</p>
+                
+                    <div class="bd-example mb-4">
+                        <form class="row g-3" data-dashlane-rid="588ccfc278eeb386" data-form-type="login">
+                          <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" data-dashlane-rid="8ce3c5bf6381b803" data-kwimpalastatus="alive" data-kwimpalaid="1651372538092-4" data-form-type="email">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4" data-dashlane-rid="51499d68fdc04161" data-kwimpalastatus="alive" data-kwimpalaid="1651372538092-2" data-form-type="password">
+                          </div>
+                          <div class="col-12">
+                            <label for="inputAddress" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" data-dashlane-rid="02c1bde13ad3c6a8" data-kwimpalastatus="alive" data-kwimpalaid="1651372538092-5" data-form-type="address">
+                          </div>
+                          <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" data-dashlane-rid="d6ef98aa106403fb" data-kwimpalastatus="alive" data-kwimpalaid="1651372538092-6" data-form-type="address">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="inputCity" class="form-label">City</label>
+                            <input type="text" class="form-control" id="inputCity" data-dashlane-rid="07c0db37678e4ec8" data-kwimpalastatus="alive" data-kwimpalaid="1651372538092-7" data-form-type="address,city">
+                          </div>
+                          <div class="col-md-4">
+                            <label for="inputState" class="form-label">State</label>
+                            <select id="inputState" class="form-select" data-dashlane-rid="1e411f2057f3d7cd" data-form-type="address,region">
+                              <option selected="">Choose...</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                          <div class="col-md-2">
+                            <label for="inputZip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="inputZip" data-dashlane-rid="6688428319a17bae" data-kwimpalastatus="alive" data-kwimpalaid="1651372538092-8" data-form-type="address,zip">
+                          </div>
+                          <div class="col-12">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="gridCheck" data-dashlane-rid="0b0676cb45c18fe5" data-form-type="other">
+                              <label class="form-check-label" for="gridCheck">
+                                Check me out
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <button type="submit" class="btn btn-primary" data-dashlane-rid="24effc77b73d2f3a" data-dashlane-label="true" data-form-type="action">Sign in</button>
+                          </div>
+                        </form>
+                    </div>
+                
+                    <h3>Horizontal form</h3>
+                
+                    <p>Create horizontal forms with the grid by adding the <code>.row</code> class to form groups and using the <code>.col-*-*</code> classes to specify the width of your labels and controls. Be sure to add <code>.col-form-label</code> to your <code>&lt;label&gt;</code>s as well so they’re vertically centered with their associated form controls.</p>
+                
+                    <div class="bd-example mb-4">
+                        <form data-dashlane-rid="86337331b45aadf0" data-form-type="login">
+                          <div class="row mb-3">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                              <input type="email" class="form-control" id="inputEmail3" data-dashlane-rid="d97c212a4d74ebd4" data-kwimpalastatus="alive" data-kwimpalaid="1651372538092-9" data-form-type="email">
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                              <input type="password" class="form-control" id="inputPassword3" data-dashlane-rid="2bafcab5a40aadf3" data-kwimpalastatus="alive" data-kwimpalaid="1651372538092-3" data-form-type="password">
+                            </div>
+                          </div>
+                          <fieldset class="row mb-3">
+                            <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                            <div class="col-sm-10">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="" data-dashlane-rid="f5c619605cc1df1c" data-form-type="other">
+                                <label class="form-check-label" for="gridRadios1">
+                                  First radio
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2" data-dashlane-rid="8b232fde361cbcd8" data-form-type="other">
+                                <label class="form-check-label" for="gridRadios2">
+                                  Second radio
+                                </label>
+                              </div>
+                              <div class="form-check disabled">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled="" data-dashlane-rid="df81328e652d35bb" data-form-type="other">
+                                <label class="form-check-label" for="gridRadios3">
+                                  Third disabled radio
+                                </label>
+                              </div>
+                            </div>
+                          </fieldset>
+                          <div class="row mb-3">
+                            <div class="col-sm-10 offset-sm-2">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1" data-dashlane-rid="e0131a0f9d156758" data-form-type="other">
+                                <label class="form-check-label" for="gridCheck1">
+                                  Example checkbox
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                          <button type="submit" class="btn btn-primary" data-dashlane-rid="d19cae04949a7243" data-dashlane-label="true" data-form-type="action">Sign in</button>
+                        </form>
+                    </div>
+                
+                    <h4>Horizontal form label sizing</h4>
+                
+                    <p>Be sure to use <code>.col-form-label-sm</code> or <code>.col-form-label-lg</code> to your <code>&lt;label&gt;</code>s or <code>&lt;legend&gt;</code>s to correctly follow the size of <code>.form-control-lg</code> and <code>.form-control-sm</code>.</p>
+                
+                    <div class="bd-example mb-4">
+                        <div class="row mb-3">
+                          <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm" data-dashlane-rid="3a33ae21bc67c602" data-kwimpalastatus="alive" data-kwimpalaid="1651372538092-19" data-form-type="email">
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label" data-dashlane-rid="fb23a048a6a2a3a8" data-kwimpalastatus="alive" data-kwimpalaid="1651372538092-20" data-form-type="email">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg" data-dashlane-rid="37b28ad3a18513b5" data-kwimpalastatus="alive" data-kwimpalaid="1651372538092-21" data-form-type="email">
+                          </div>
+                        </div>
+                    </div>
+                    
+                    <h3>Column sizing</h3>
+                
+                    <p>As shown in the previous examples, our grid system allows you to place any number of <code>.col</code>s within a <code>.row</code>. They’ll split the available width equally between them. You may also pick a subset of your columns to take up more or less space, while the remaining <code>.col</code>s equally split the rest, with specific column classes like <code>.col-sm-7</code>.</p>
+                
+                    <div class="bd-example mb-4">
+                        <div class="row g-3">
+                          <div class="col-sm-7">
+                            <input type="text" class="form-control" placeholder="City" aria-label="City" data-dashlane-rid="8f42bbdeb56df8ce" data-form-type="other">
+                          </div>
+                          <div class="col-sm">
+                            <input type="text" class="form-control" placeholder="State" aria-label="State" data-dashlane-rid="816e2cdc91eb488c" data-form-type="other">
+                          </div>
+                          <div class="col-sm">
+                            <input type="text" class="form-control" placeholder="Zip" aria-label="Zip" data-dashlane-rid="2747c29d354be80e" data-form-type="other">
+                          </div>
+                        </div>
+                    </div>
+                
+                    <h3>Inline forms</h3>
+                
+                    <p>Use the <code>.row-cols-*</code> classes to create responsive horizontal layouts. By adding <a href="/docs/5.0/layout/gutters/">gutter modifier classes</a>, we’ll have gutters in horizontal and vertical directions. On narrow mobile viewports, the <code>.col-12</code> helps stack the form controls and more. The <code>.align-items-center</code> aligns the form elements to the middle, making the <code>.form-checkbox</code> align properly.</p>
+                
+                    <div class="bd-example mb-4">
+                        <form class="row row-cols-lg-auto g-3 align-items-center" data-dashlane-rid="a0c1eb2c5bc3d90d" data-form-type="login,step">
+                          <div class="col-12">
+                            <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+                            <div class="input-group">
+                              <div class="input-group-text">@</div>
+                              <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username" data-dashlane-rid="b708906007a93b63" data-kwimpalastatus="alive" data-kwimpalaid="1651372538092-14" data-form-type="username">
+                            </div>
+                          </div>
+                        
+                          <div class="col-12">
+                            <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+                            <select class="form-select" id="inlineFormSelectPref" data-dashlane-rid="5aa813faefe1cc57" data-form-type="other">
+                              <option selected="">Choose...</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                        
+                          <div class="col-12">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="inlineFormCheck" data-dashlane-rid="ae61be0ebc2c3dee" data-form-type="consent">
+                              <label class="form-check-label" for="inlineFormCheck">
+                                Remember me
+                              </label>
+                            </div>
+                          </div>
+                        
+                          <div class="col-12">
+                            <button type="submit" class="btn btn-primary" data-dashlane-rid="a2533302cab1e91f" data-dashlane-label="true" data-form-type="action">Submit</button>
+                          </div>
+                        </form>
+                    </div>
+                
+                </section>
+                
+                <section id="forms-validation" class="mb-5">
+                
+                    <h2>Validation</h2>
+                
+                    <p class="bd-lead">Provide valuable, actionable feedback to your users with HTML5 form validation, via browser default behaviors or custom styles and JavaScript.</p>
+                
+                    <h3>Custom styles</h3>
+                
+                    <div class="bd-example mb-4">
+                        <form class="row g-3 needs-validation" novalidate="" data-dashlane-rid="7cd808eee88396ff" data-form-type="other">
+                          <div class="col-md-4">
+                            <label for="validationCustom01" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="validationCustom01" value="Mark" required="" data-dashlane-rid="f288818ad8fe4475" data-kwimpalastatus="alive" data-kwimpalaid="1651373225547-3" data-form-type="name,first">
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <label for="validationCustom02" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="validationCustom02" value="Otto" required="" data-dashlane-rid="1647a6236eb29020" data-kwimpalastatus="alive" data-kwimpalaid="1651373225547-4" data-form-type="name,last">
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <label for="validationCustomUsername" class="form-label">Username</label>
+                            <div class="input-group has-validation">
+                              <span class="input-group-text" id="inputGroupPrepend">@</span>
+                              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required="" data-dashlane-rid="45d23adbfcce9c54" data-kwimpalastatus="alive" data-kwimpalaid="1651373225547-5" data-form-type="username">
+                              <div class="invalid-feedback">
+                                Please choose a username.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label">City</label>
+                            <input type="text" class="form-control" id="validationCustom03" required="" data-dashlane-rid="72dc86e9acf5b6ac" data-kwimpalastatus="alive" data-kwimpalaid="1651373225547-6" data-form-type="address,city">
+                            <div class="invalid-feedback">
+                              Please provide a valid city.
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <label for="validationCustom04" class="form-label">State</label>
+                            <select class="form-select" id="validationCustom04" required="" data-dashlane-rid="e4e8b09316b6c157" data-form-type="address,region">
+                              <option selected="" disabled="" value="">Choose...</option>
+                              <option>...</option>
+                            </select>
+                            <div class="invalid-feedback">
+                              Please select a valid state.
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <label for="validationCustom05" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="validationCustom05" required="" data-dashlane-rid="1ebf3bd68d371b4a" data-kwimpalastatus="alive" data-kwimpalaid="1651373225547-7" data-form-type="address,zip">
+                            <div class="invalid-feedback">
+                              Please provide a valid zip.
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required="" data-dashlane-rid="98f5a18831d31e6f" data-form-type="consent,terms">
+                              <label class="form-check-label" for="invalidCheck">
+                                Agree to terms and conditions
+                              </label>
+                              <div class="invalid-feedback">
+                                You must agree before submitting.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <button class="btn btn-primary" type="submit" data-dashlane-rid="88bf690091b9e72d" data-dashlane-label="true" data-form-type="action">Submit form</button>
+                          </div>
+                        </form>
+                    </div>
+                
+                    <h3>Browser defaults</h3>
+                
+                    <p>Not interested in custom validation feedback messages or writing JavaScript to change form behaviors? All good, you can use the browser defaults. Try submitting the form below. Depending on your browser and OS, you’ll see a slightly different style of feedback.</p>
+                
+                    <div class="bd-example mb-4">
+                        <form class="row g-3" data-dashlane-rid="2b45830c305aa075" data-form-type="other">
+                          <div class="col-md-4">
+                            <label for="validationDefault01" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="Mark" required="" data-dashlane-rid="eabc8b053ca3fa15" data-kwimpalastatus="alive" data-kwimpalaid="1651373225547-8" data-form-type="name,first">
+                          </div>
+                          <div class="col-md-4">
+                            <label for="validationDefault02" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="validationDefault02" value="Otto" required="" data-dashlane-rid="9c4ea6ba0274be57" data-kwimpalastatus="alive" data-kwimpalaid="1651373225547-9" data-form-type="name,last">
+                          </div>
+                          <div class="col-md-4">
+                            <label for="validationDefaultUsername" class="form-label">Username</label>
+                            <div class="input-group">
+                              <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                              <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required="" data-dashlane-rid="cda469454c3fadc5" data-kwimpalastatus="alive" data-kwimpalaid="1651373225547-10" data-form-type="username">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="validationDefault03" class="form-label">City</label>
+                            <input type="text" class="form-control" id="validationDefault03" required="" data-dashlane-rid="5e86315606f13614" data-kwimpalastatus="alive" data-kwimpalaid="1651373225547-11" data-form-type="address,city">
+                          </div>
+                          <div class="col-md-3">
+                            <label for="validationDefault04" class="form-label">State</label>
+                            <select class="form-select" id="validationDefault04" required="" data-dashlane-rid="b0df9a629d2dded7" data-form-type="address,region">
+                              <option selected="" disabled="" value="">Choose...</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                          <div class="col-md-3">
+                            <label for="validationDefault05" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="validationDefault05" required="" data-dashlane-rid="b915d02183945766" data-kwimpalastatus="alive" data-kwimpalaid="1651373225547-12" data-form-type="address,zip">
+                          </div>
+                          <div class="col-12">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required="" data-dashlane-rid="b8123ae34af9c6e5" data-form-type="consent,terms">
+                              <label class="form-check-label" for="invalidCheck2">
+                                Agree to terms and conditions
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <button class="btn btn-primary" type="submit" data-dashlane-rid="0952c3afff06ddd1" data-dashlane-label="true" data-form-type="action">Submit form</button>
+                          </div>
+                        </form>
+                    </div>
+                
+                    <h3>Tooltips</h3>
+                
+                    <p>If your form layout allows it, you can swap the <code>.{valid|invalid}-feedback</code> classes for <code>.{valid|invalid}-tooltip</code> classes to display validation feedback in a styled tooltip. Be sure to have a parent with <code>position: relative</code> on it for tooltip positioning. In the example below, our column classes have this already, but your project may require an alternative setup.</p>
+                
+                    <div class="bd-example mb-5">
+                        <form class="row g-3 needs-validation" novalidate="" data-dashlane-rid="2768d23d60b14838" data-form-type="other">
+                          <div class="col-md-4 position-relative">
+                            <label for="validationTooltip01" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="validationTooltip01" value="Mark" required="" data-dashlane-rid="b36d2adb2d457731" data-kwimpalastatus="alive" data-kwimpalaid="1651373225547-18" data-form-type="name,first">
+                            <div class="valid-tooltip">
+                              Looks good!
+                            </div>
+                          </div>
+                          <div class="col-md-4 position-relative">
+                            <label for="validationTooltip02" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="validationTooltip02" value="Otto" required="" data-dashlane-rid="ea20a1ddd3940f76" data-kwimpalastatus="alive" data-kwimpalaid="1651373225547-19" data-form-type="name,last">
+                            <div class="valid-tooltip">
+                              Looks good!
+                            </div>
+                          </div>
+                          <div class="col-md-4 position-relative">
+                            <label for="validationTooltipUsername" class="form-label">Username</label>
+                            <div class="input-group has-validation">
+                              <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                              <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required="" data-dashlane-rid="78b631112fff6892" data-kwimpalastatus="alive" data-kwimpalaid="1651373225547-20" data-form-type="username">
+                              <div class="invalid-tooltip">
+                                Please choose a unique and valid username.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 position-relative">
+                            <label for="validationTooltip03" class="form-label">City</label>
+                            <input type="text" class="form-control" id="validationTooltip03" required="" data-dashlane-rid="cb317213b04fb376" data-kwimpalastatus="alive" data-kwimpalaid="1651373225547-21" data-form-type="address,city">
+                            <div class="invalid-tooltip">
+                              Please provide a valid city.
+                            </div>
+                          </div>
+                          <div class="col-md-3 position-relative">
+                            <label for="validationTooltip04" class="form-label">State</label>
+                            <select class="form-select" id="validationTooltip04" required="" data-dashlane-rid="30b907b37d0e04b2" data-form-type="address,region">
+                              <option selected="" disabled="" value="">Choose...</option>
+                              <option>...</option>
+                            </select>
+                            <div class="invalid-tooltip">
+                              Please select a valid state.
+                            </div>
+                          </div>
+                          <div class="col-md-3 position-relative">
+                            <label for="validationTooltip05" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="validationTooltip05" required="" data-dashlane-rid="02fd3121a36bbb47" data-kwimpalastatus="alive" data-kwimpalaid="1651373225547-22" data-form-type="address,zip">
+                            <div class="invalid-tooltip">
+                              Please provide a valid zip.
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <button class="btn btn-primary" type="submit" data-dashlane-rid="54f58011a2066024" data-dashlane-label="true" data-form-type="action">Submit form</button>
+                          </div>
+                        </form>
+                    </div>
+                
+                </section>
+
+            </div>
+        </div>
+
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <p class="mb-1">Developed by Mauricio Hidalgo Ríos | Bootstrap / UCreativa</p>
+  </div>
+</footer>
+
+
+<script src="bootstrap/js/bootstrap.js"></script>
+
+      
+  </body>
+</html>

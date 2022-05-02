@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Componentes Bootstrap - Navs & tabs</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/docs.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+  </head>
+  <body class="accordion">
+    
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 py-4">
+          <h4 class="text-white">Acerca de:</h4>
+          <p class="text-white">Módulo: Diseño de páginas web con Bootstrap.</p>
+          <p class="text-white">PROYECTO FINAL</p>
+          <p class="text-white">Mauricio Hidalgo Ríos</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <img src="assets/bootstrap_logo.png" alt="Bootstrap" width="30">
+        <strong class="ms-2">Back to Components List</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="py-1 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light"><strong>Navs and tabs</strong></h1>
+        <p class="bd-lead">Documentation and examples for how to use Bootstrap’s included navigation components.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                
+                <h2>Base nav</h2>
+
+                <p>Navigation available in Bootstrap share general markup and styles, from the base <code>.nav</code> class to the active and disabled states. Swap modifier classes to switch between each style.</p>
+
+                <div class="bd-example">
+                    <ul class="nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                </div>
+
+                <p>Classes are used throughout, so your markup can be super flexible. Use <code>&lt;ul&gt;</code>s like above, <code>&lt;ol&gt;</code> if the order of your items is important, or roll your own with a <code>&lt;nav&gt;</code> element. Because the <code>.nav</code> uses <code>display: flex</code>, the nav links behave the same as nav items would, but without the extra markup.</p>
+
+                <div class="bd-example mb-5">
+                    <nav class="nav">
+                      <a class="nav-link active" aria-current="page" href="#">Active</a>
+                      <a class="nav-link" href="#">Link</a>
+                      <a class="nav-link" href="#">Link</a>
+                      <a class="nav-link disabled">Disabled</a>
+                    </nav>
+                </div>
+
+                <h2>Available styles</h2>
+
+                <h3>Horizontal alignment</h3>
+
+                <p>Centered with <code>.justify-content-center</code>:</p>
+
+                <div class="bd-example mb-5">
+                    <ul class="nav justify-content-center">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                </div>
+
+                <p>Right-aligned with <code>.justify-content-end</code>:</p>
+
+                <div class="bd-example mb-5">
+                    <ul class="nav justify-content-end">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                </div>
+
+                <h3>Vertical</h3>
+
+                <div class="bd-example">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                </div>
+
+                <p>As always, vertical navigation is possible without <code>&lt;ul&gt;</code>s, too.</p>
+
+                <div class="bd-example mb-5">
+                    <nav class="nav flex-column">
+                      <a class="nav-link active" aria-current="page" href="#">Active</a>
+                      <a class="nav-link" href="#">Link</a>
+                      <a class="nav-link" href="#">Link</a>
+                      <a class="nav-link disabled">Disabled</a>
+                    </nav>
+                </div>
+
+                <h3>Tabs</h3>
+
+                <div class="bd-example mb-5">
+                    <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                </div>
+
+                <h3>Pills</h3>
+
+                <div class="bd-example mb-5">
+                    <ul class="nav nav-pills">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                </div>
+
+                <h3>Fill and justify</h3>
+
+                <div class="bd-example mb-5">
+                    <ul class="nav nav-pills nav-fill">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Much longer nav link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                </div>
+
+                <p>When using a <code>&lt;nav&gt;</code>-based navigation, you can safely omit <code>.nav-item</code> as only <code>.nav-link</code> is required for styling <code>&lt;a&gt;</code> elements.</p>
+
+                <div class="bd-example">
+                    <nav class="nav nav-pills nav-fill">
+                      <a class="nav-link active" aria-current="page" href="#">Active</a>
+                      <a class="nav-link" href="#">Much longer nav link</a>
+                      <a class="nav-link" href="#">Link</a>
+                      <a class="nav-link disabled">Disabled</a>
+                    </nav>
+                </div>
+
+                <p>For equal-width elements, use <code>.nav-justified</code>. All horizontal space will be occupied by nav links, but unlike the <code>.nav-fill</code> above, every nav item will be the same width.</p>
+
+                <div class="bd-example">
+                    <ul class="nav nav-pills nav-justified">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Much longer nav link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                </div>
+
+                <p>Similar to the <code>.nav-fill</code> example using a <code>&lt;nav&gt;</code>-based navigation.</p>
+
+                <div class="bd-example mb-5">
+                    <nav class="nav nav-pills nav-justified">
+                      <a class="nav-link active" aria-current="page" href="#">Active</a>
+                      <a class="nav-link" href="#">Much longer nav link</a>
+                      <a class="nav-link" href="#">Link</a>
+                      <a class="nav-link disabled">Disabled</a>
+                    </nav>
+                </div>
+
+                <h2>Working with flex utilities</h2>
+
+                <div class="bd-example mb-5">
+                    <nav class="nav nav-pills flex-column flex-sm-row">
+                      <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">Active</a>
+                      <a class="flex-sm-fill text-sm-center nav-link" href="#">Longer nav link</a>
+                      <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
+                      <a class="flex-sm-fill text-sm-center nav-link disabled">Disabled</a>
+                    </nav>
+                </div>
+
+                <h2>Using dropdowns</h2>
+
+                <p>Add dropdown menus with a little extra HTML and the dropdowns JavaScript plugin.</p>
+
+                <h3>Tabs with dropdowns</h3>
+
+                <div class="bd-example mb-5">
+                    <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                        <ul class="dropdown-menu" style="">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                </div>
+
+                <h3>Pills with dropdowns</h3>
+
+                <div class="bd-example mb-5">
+                    <ul class="nav nav-pills">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                        <ul class="dropdown-menu" style="">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <p class="mb-1">Developed by Mauricio Hidalgo Ríos | Bootstrap / UCreativa</p>
+  </div>
+</footer>
+
+<script src="js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+
+      
+  </body>
+</html>

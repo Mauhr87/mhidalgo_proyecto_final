@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Componentes Bootstrap - Buttons</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/docs.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+  </head>
+  <body class="accordion">
+    
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 py-4">
+          <h4 class="text-white">Acerca de:</h4>
+          <p class="text-white">Módulo: Diseño de páginas web con Bootstrap.</p>
+          <p class="text-white">PROYECTO FINAL</p>
+          <p class="text-white">Mauricio Hidalgo Ríos</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <img src="assets/bootstrap_logo.png" alt="Bootstrap" width="30">
+        <strong class="ms-2">Back to Components List</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="py-1 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light"><strong>Buttons</strong></h1>
+        <p class="bd-lead">Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                
+                <h2>Examples</h2>
+                <p>Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
+
+                <div class="bd-example mb-5">
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-secondary">Secondary</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button type="button" class="btn btn-light">Light</button>
+                    <button type="button" class="btn btn-dark">Dark</button>
+                    <button type="button" class="btn btn-link">Link</button>
+                </div>
+
+                <h2>Button tags</h2>
+
+                <p>The <code>.btn</code> classes are designed to be used with the <code>&lt;button&gt;</code> element. However, you can also use these classes on <code>&lt;a&gt;</code> or <code>&lt;input&gt;</code> elements (though some browsers may apply a slightly different rendering).</p>
+
+                <p>When using button classes on <code>&lt;a&gt;</code> elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a <code>role="button"</code> to appropriately convey their purpose to assistive technologies such as screen readers.</p>
+
+                <div class="bd-example mb-5">
+                    <a class="btn btn-primary" href="#" role="button">Link</a>
+                    <button class="btn btn-primary" type="submit">Button</button>
+                    <input class="btn btn-primary" type="button" value="Input">
+                    <input class="btn btn-primary" type="submit" value="Submit">
+                    <input class="btn btn-primary" type="reset" value="Reset">
+                </div>
+
+                <h2>Outline buttons</h2>
+
+                <p>In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with the <code>.btn-outline-*</code> ones to remove all background images and colors on any button.</p>
+
+                <div class="bd-example mb-5">
+                    <button type="button" class="btn btn-outline-primary">Primary</button>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    <button type="button" class="btn btn-outline-success">Success</button>
+                    <button type="button" class="btn btn-outline-danger">Danger</button>
+                    <button type="button" class="btn btn-outline-warning">Warning</button>
+                    <button type="button" class="btn btn-outline-info">Info</button>
+                    <button type="button" class="btn btn-outline-light">Light</button>
+                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                </div>
+
+                <h2>Sizes</h2>
+                <p>Fancy larger or smaller buttons? Add <code>.btn-lg</code> or <code>.btn-sm</code> for additional sizes.</p>
+
+                <div class="bd-example">
+                    <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                    <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+                </div>
+
+                <div class="bd-example mb-5">
+                    <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                    <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+                </div>
+
+                <h2>Disabled state</h2>
+
+                <p>Make buttons look inactive by adding the <code>disabled</code> boolean attribute to any <code>&lt;button&gt;</code> element. Disabled buttons have <code>pointer-events: none</code> applied to, preventing hover and active states from triggering.</p>
+
+                <div class="bd-example">
+                    <button type="button" class="btn btn-lg btn-primary" disabled="">Primary button</button>
+                    <button type="button" class="btn btn-secondary btn-lg" disabled="">Button</button>
+                </div>
+
+                <p>Disabled buttons using the <code>&lt;a&gt;</code> element behave a bit different:</p>
+
+                <ul>
+                    <li><code>&lt;a&gt;</code>s don’t support the <code>disabled</code> attribute, so you must add the <code>.disabled</code> class to make it visually appear disabled.</li>
+                    <li>Some future-friendly styles are included to disable all <code>pointer-events</code> on anchor buttons.</li>
+                    <li>Disabled buttons using <code>&lt;a&gt;</code> should include the <code>aria-disabled="true"</code> attribute to indicate the state of the element to assistive technologies.</li>
+                    <li>Disabled buttons using <code>&lt;a&gt;</code> <em>should not</em> include the <code>href</code> attribute.</li>
+                </ul>
+
+                <div class="bd-example mb-5">
+                    <a class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Primary link</a>
+                    <a class="btn btn-secondary btn-lg disabled" role="button" aria-disabled="true">Link</a>
+                </div>
+
+                <h2>Block buttons</h2>
+
+                <p>Create responsive stacks of full-width, “block buttons” like those in Bootstrap 4 with a mix of our display and gap utilities. By using utilities instead of button specific classes, we have much greater control over spacing, alignment, and responsive behaviors.</p>
+                
+                <div class="bd-example">
+                    <div class="d-grid gap-2">
+                      <button class="btn btn-primary" type="button">Button</button>
+                      <button class="btn btn-primary" type="button">Button</button>
+                    </div>
+                </div>
+
+                <p>Here we create a responsive variation, starting with vertically stacked buttons until the <code>md</code> breakpoint, where <code>.d-md-block</code> replaces the <code>.d-grid</code> class, thus nullifying the <code>gap-2</code> utility. Resize your browser to see them change.</p>
+
+                <div class="bd-example">
+                    <div class="d-grid gap-2 d-md-block">
+                      <button class="btn btn-primary" type="button">Button</button>
+                      <button class="btn btn-primary" type="button">Button</button>
+                    </div>
+                </div>
+
+                <p>You can adjust the width of your block buttons with grid column width classes. For example, for a half-width “block button”, use <code>.col-6</code>. Center it horizontally with <code>.mx-auto</code>, too.</p>
+
+                <div class="bd-example">
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                      <button class="btn btn-primary" type="button">Button</button>
+                      <button class="btn btn-primary" type="button">Button</button>
+                    </div>
+                </div>
+
+                <p>Additional utilities can be used to adjust the alignment of buttons when horizontal. Here we’ve taken our previous responsive example and added some flex utilities and a margin utility on the button to right align the buttons when they’re no longer stacked.</p>
+                
+                <div class="bd-example mb-5">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                      <button class="btn btn-primary me-md-2" type="button">Button</button>
+                      <button class="btn btn-primary" type="button">Button</button>
+                    </div>
+                </div>
+
+                <h2>Button plugin</h2>
+
+                <p>The button plugin allows you to create simple on/off toggle buttons.</p>
+
+                <h3>Toggle states</h3>
+
+                <p>Add <code>data-bs-toggle="button"</code> to toggle a button’s <code>active</code> state. If you’re pre-toggling a button, you must manually add the <code>.active</code> class <strong>and</strong> <code>aria-pressed="true"</code> to ensure that it is conveyed appropriately to assistive technologies.</p>
+
+                <div class="bd-example">
+                    <button type="button" class="btn btn-primary active" data-bs-toggle="button" autocomplete="off" aria-pressed="true">Toggle button</button>
+                    <button type="button" class="btn btn-primary active" data-bs-toggle="button" autocomplete="off" aria-pressed="true">Active toggle button</button>
+                    <button type="button" class="btn btn-primary" disabled="" data-bs-toggle="button" autocomplete="off">Disabled toggle button</button>
+                </div>
+
+                <div class="bd-example mb-4">
+                    <a href="#" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Toggle link</a>
+                    <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button" aria-pressed="false">Active toggle link</a>
+                    <a class="btn btn-primary disabled" aria-disabled="true" role="button" data-bs-toggle="button">Disabled toggle link</a>
+                </div>
+
+                <h2>Methods</h2>
+
+                <p>You can create a button instance with the button constructor, for example:</p>
+
+                <div class="highlight mb-5"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js">
+                    <span class="kd">var</span> <span class="nx">button</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'myButton'</span><span class="p">)</span>
+                    <span class="kd">var</span> <span class="nx">bsButton</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Button</span><span class="p">(</span><span class="nx">button</span><span class="p">)</span>
+                    </code></pre>
+                </div>
+
+                <h1>Button group</h1>
+
+                <p class="bd-lead">Group a series of buttons together on a single line or stack them in a vertical column.</p>
+
+                <h2>Basic example</h2>
+                <p>Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.</p>
+
+                <div class="bd-example">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-primary">Left</button>
+                      <button type="button" class="btn btn-primary">Middle</button>
+                      <button type="button" class="btn btn-primary">Right</button>
+                    </div>
+                </div>
+
+                <p>These classes can also be added to groups of links, as an alternative to the .nav navigation components.</p>
+
+                <div class="bd-example mb-5">
+                    <div class="btn-group">
+                      <a href="#" class="btn btn-primary active" aria-current="page">Active link</a>
+                      <a href="#" class="btn btn-primary">Link</a>
+                      <a href="#" class="btn btn-primary">Link</a>
+                    </div>
+                </div>
+
+                <h2>Mixed styles</h2>
+
+                <div class="bd-example mb-5">
+                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                      <button type="button" class="btn btn-danger">Left</button>
+                      <button type="button" class="btn btn-warning">Middle</button>
+                      <button type="button" class="btn btn-success">Right</button>
+                    </div>
+                </div>
+
+                <h2>Outlined styles</h2>
+
+                <div class="bd-example mb-5">
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="btn btn-outline-primary">Left</button>
+                      <button type="button" class="btn btn-outline-primary">Middle</button>
+                      <button type="button" class="btn btn-outline-primary">Right</button>
+                    </div>
+                </div>
+
+                <h2>Checkbox and radio button groups</h2>
+
+                <p>Combine button-like checkbox and radio toggle buttons into a seamless looking button group.</p>
+
+                <div class="bd-example">
+                    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                      <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                      <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
+                    
+                      <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                      <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
+                    
+                      <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                      <label class="btn btn-outline-primary" for="btncheck3">Checkbox 3</label>
+                    </div>
+                </div>
+
+                <div class="bd-example mb-5">
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                      <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked="">
+                      <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
+                    
+                      <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                      <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
+                    
+                      <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                      <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
+                    </div>
+                </div>   
+                
+                <h2>Button toolbar</h2>
+                <p>Combine sets of button groups into button toolbars for more complex components. Use utility classes as needed to space out groups, buttons, and more.</p>
+
+                <div class="bd-example">
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                      <div class="btn-group me-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-primary">1</button>
+                        <button type="button" class="btn btn-primary">2</button>
+                        <button type="button" class="btn btn-primary">3</button>
+                        <button type="button" class="btn btn-primary">4</button>
+                      </div>
+                      <div class="btn-group me-2" role="group" aria-label="Second group">
+                        <button type="button" class="btn btn-secondary">5</button>
+                        <button type="button" class="btn btn-secondary">6</button>
+                        <button type="button" class="btn btn-secondary">7</button>
+                      </div>
+                      <div class="btn-group" role="group" aria-label="Third group">
+                        <button type="button" class="btn btn-info">8</button>
+                      </div>
+                    </div>
+                </div>
+
+                <p>Feel free to mix input groups with button groups in your toolbars. Similar to the example above, you’ll likely need some utilities though to space things properly.</p>
+
+                <div class="bd-example mb-5">
+                    <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                      <div class="btn-group me-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-outline-secondary">1</button>
+                        <button type="button" class="btn btn-outline-secondary">2</button>
+                        <button type="button" class="btn btn-outline-secondary">3</button>
+                        <button type="button" class="btn btn-outline-secondary">4</button>
+                      </div>
+                      <div class="input-group">
+                        <div class="input-group-text" id="btnGroupAddon">@</div>
+                        <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon" data-dashlane-rid="b99b709c1a89f5f0" data-form-type="other">
+                      </div>
+                    </div>
+                    
+                    <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                      <div class="btn-group" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-outline-secondary" data-dashlane-rid="f65ca0a1e1ff92dc" data-dashlane-label="true" data-form-type="other">1</button>
+                        <button type="button" class="btn btn-outline-secondary" data-dashlane-rid="751c4902063f4199" data-dashlane-label="true" data-form-type="other">2</button>
+                        <button type="button" class="btn btn-outline-secondary" data-dashlane-rid="8035c36240656843" data-dashlane-label="true" data-form-type="other">3</button>
+                        <button type="button" class="btn btn-outline-secondary" data-dashlane-rid="4ac2f3904817725f" data-dashlane-label="true" data-form-type="other">4</button>
+                      </div>
+                      <div class="input-group">
+                        <div class="input-group-text" id="btnGroupAddon2">@</div>
+                        <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon2" data-dashlane-rid="1a116a306f9ccbea" data-form-type="other">
+                      </div>
+                    </div>
+                </div>
+
+                <h2>Sizing</h2>
+
+                <p>Instead of applying button sizing classes to every button in a group, just add <code>.btn-group-*</code> to each <code>.btn-group</code>, including each one when nesting multiple groups.</p>
+
+                <div class="bd-example mb-5">
+                    <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+                      <button type="button" class="btn btn-outline-dark" data-dashlane-rid="317b13560a1f0eb3" data-dashlane-label="true" data-form-type="other">Left</button>
+                      <button type="button" class="btn btn-outline-dark" data-dashlane-rid="7d27d11d95003511" data-dashlane-label="true" data-form-type="other">Middle</button>
+                      <button type="button" class="btn btn-outline-dark" data-dashlane-rid="c9ce94f96217b490" data-dashlane-label="true" data-form-type="other">Right</button>
+                    </div>
+                    <br>
+                    <div class="btn-group" role="group" aria-label="Default button group">
+                      <button type="button" class="btn btn-outline-dark" data-dashlane-rid="cfdf080caf99d950" data-dashlane-label="true" data-form-type="other">Left</button>
+                      <button type="button" class="btn btn-outline-dark" data-dashlane-rid="8b27b1390e843dde" data-dashlane-label="true" data-form-type="other">Middle</button>
+                      <button type="button" class="btn btn-outline-dark" data-dashlane-rid="2ed5030a89110c65" data-dashlane-label="true" data-form-type="other">Right</button>
+                    </div>
+                    <br>
+                    <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                      <button type="button" class="btn btn-outline-dark" data-dashlane-rid="463577d589cb5384" data-dashlane-label="true" data-form-type="other">Left</button>
+                      <button type="button" class="btn btn-outline-dark" data-dashlane-rid="6dea891e1e8cbaf2" data-dashlane-label="true" data-form-type="other">Middle</button>
+                      <button type="button" class="btn btn-outline-dark" data-dashlane-rid="4e370dd073440042" data-dashlane-label="true" data-form-type="other">Right</button>
+                    </div>
+                </div>
+
+                <h2>Nesting</h2>
+                <p>Place a <code>.btn-group</code> within another <code>.btn-group</code> when you want dropdown menus mixed with a series of buttons.</p>
+
+                <div class="bd-example mb-5">
+                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                      <button type="button" class="btn btn-primary" data-dashlane-rid="a44e6caa4475fd21" data-dashlane-label="true" data-form-type="action">1</button>
+                      <button type="button" class="btn btn-primary" data-dashlane-rid="b9fcacf58878475d" data-dashlane-label="true" data-form-type="action">2</button>
+                    
+                      <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-dashlane-rid="808b1351876be2ef" data-dashlane-label="true" data-form-type="other">
+                          Dropdown
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                          <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                          <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <h2>Vertical variation</h2>
+                <p>Make a set of buttons appear vertically stacked rather than horizontally. <strong>Split button dropdowns are not supported here.</strong></p>
+
+                <div class="bd-example">
+                    <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                      <button type="button" class="btn btn-dark" data-dashlane-rid="03f781bbb764f000" data-dashlane-label="true" data-form-type="other">Button</button>
+                      <button type="button" class="btn btn-dark" data-dashlane-rid="5eedffc8e35b8903" data-dashlane-label="true" data-form-type="other">Button</button>
+                      <button type="button" class="btn btn-dark" data-dashlane-rid="8905792bd48b982b" data-dashlane-label="true" data-form-type="other">Button</button>
+                      <button type="button" class="btn btn-dark" data-dashlane-rid="9a694abcdf69dd10" data-dashlane-label="true" data-form-type="other">Button</button>
+                      <button type="button" class="btn btn-dark" data-dashlane-rid="0a30e2ad439d5630" data-dashlane-label="true" data-form-type="other">Button</button>
+                      <button type="button" class="btn btn-dark" data-dashlane-rid="535b73f3b511e415" data-dashlane-label="true" data-form-type="other">Button</button>
+                    </div>
+                </div>
+
+                <div class="bd-example">
+                    <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                      <button type="button" class="btn btn-primary" data-dashlane-rid="b0a36b12ea048f70" data-dashlane-label="true" data-form-type="action">Button</button>
+                      <button type="button" class="btn btn-primary" data-dashlane-rid="8ef86a8d920a4e44" data-dashlane-label="true" data-form-type="action">Button</button>
+                      <div class="btn-group" role="group">
+                        <button id="btnGroupVerticalDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-dashlane-rid="226a5d2b85438ec3" data-dashlane-label="true" data-form-type="other">
+                          Dropdown
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
+                          <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                          <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                        </ul>
+                      </div>
+                      <button type="button" class="btn btn-primary" data-dashlane-rid="6dbf354d93b851f3" data-dashlane-label="true" data-form-type="action">Button</button>
+                      <button type="button" class="btn btn-primary" data-dashlane-rid="9bbd0c617735e3a3" data-dashlane-label="true" data-form-type="action">Button</button>
+                      <div class="btn-group" role="group">
+                        <button id="btnGroupVerticalDrop2" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-dashlane-rid="60c2f5bc474f9ec4" data-dashlane-label="true" data-form-type="other">
+                          Dropdown
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop2">
+                          <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                          <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                        </ul>
+                      </div>
+                      <div class="btn-group" role="group">
+                        <button id="btnGroupVerticalDrop3" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-dashlane-rid="960dcb394f74f00d" data-dashlane-label="true" data-form-type="other">
+                          Dropdown
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop3">
+                          <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                          <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                        </ul>
+                      </div>
+                      <div class="btn-group" role="group">
+                        <button id="btnGroupVerticalDrop4" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-dashlane-rid="adb6aa5ccb83ca5c" data-dashlane-label="true" data-form-type="other">
+                          Dropdown
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop4">
+                          <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                          <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="bd-example mb-5">
+                    <div class="btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">
+                      <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked="">
+                      <label class="btn btn-outline-danger" for="vbtn-radio1">Radio 1</label>
+                      <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
+                      <label class="btn btn-outline-danger" for="vbtn-radio2">Radio 2</label>
+                      <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
+                      <label class="btn btn-outline-danger" for="vbtn-radio3">Radio 3</label>
+                    </div>
+                </div>
+
+                <h1>Close button</h1>
+
+                <p class="bd-lead">A generic close button for dismissing content like modals and alerts.</p>
+
+                <h2>Example</h2>
+
+                <p>Provide an option to dismiss or close a component with <code>.btn-close</code>. Default styling is limited, but highly customizable. Modify the Sass variables to replace the default <code>background-image</code>. <strong>Be sure to include text for screen readers</strong>, as we’ve done with <code>aria-label</code>.</p>
+
+                <div class="bd-example mb-5">
+                    <button type="button" class="btn-close" aria-label="Close"></button>
+                </div>
+
+                <h2>Disabled state</h2>
+
+                <p>Disabled close buttons change their <code>opacity</code>. We’ve also applied <code>pointer-events: none</code> and <code>user-select: none</code> to preventing hover and active states from triggering.</p>
+
+                <div class="bd-example mb-5">
+                    <button type="button" class="btn-close" disabled="" aria-label="Close"></button>
+                </div>
+
+                <h2>White variant</h2>
+
+                <div class="bd-example bg-dark">
+                    <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+                    <button type="button" class="btn-close btn-close-white" disabled="" aria-label="Close"></button>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <p class="mb-1">Developed by Mauricio Hidalgo Ríos | Bootstrap / UCreativa</p>
+  </div>
+</footer>
+
+
+<script src="bootstrap/js/bootstrap.js"></script>
+
+      
+  </body>
+</html>
